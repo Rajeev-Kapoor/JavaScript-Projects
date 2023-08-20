@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+ 
+  <link rel="stylesheet" href="indexstyle.css">
+  <title>Frontend Mentor | Multi-step form</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style type="text/css">
+    /*.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }*/
+</style>
+</head>
+<body>
+ <!-- Sidebar start -->
+   <div id="box">
+
+        <div class="balign"><button class="circle">1</button>
+        </div>
+      
+        <div class="balign">Step 1
+        <br>Your info</div>
+  
+        <div class=" balign">
+        <button class="circle" style="background-color: blue;">2</button>  
+        </div>
+    
+        <div class="balign">Step 2 <br>
+        Select plan</div>
+ 
+        <div class="balign">
+         <button class="circle">3</button>
+        </div>
+
+        <div class = "balign">Step 3 <br>
+        Add-ons</div>
+   
+        <div class="balign"> 
+        <button class="circle">4</button>
+        </div>
+        <div class="balign">Step 4 <br>
+        Summary</div> 
+</div>  
+  <!-- Step 2 start -->
+    <div id="s2box">
+            <div id = "s2flex">  Select your plan</div> <!--first row-->
+            <div id="ssize"> have the option of monthly or yearly billing.</div><!--sec row-->
+        <div id="b2sec"><!--third row-->
+            <div class = "i2box">
+                <img src="/assets/images/icon-arcade.svg" alt="" width="20px">
+                <div>$9/mo <br> <span class="i3box">Arcade</span></div>
+            </div>
+            <div class = "i2box">
+                <img src="assets/images/icon-advanced.svg" alt="" width="20px">
+                 <div>Advanced<br><span class="i3box">$12/mo</span></div>
+            </div>
+            <div class = "i2box">
+                <img src="assets/images/icon-pro.svg" alt="" width="20px">
+                <div>Pro <br><span class="i3box">$15/mo</span></div>
+            </div>
+        </div>
+    
+            <div id="frow">
+                <input style="padding: 0 ; margin: 0;"  type="radio" name="plan" >
+                <label>Monthly</label> 
+                 <input style="padding: 0 ; margin: 0;" type="radio" name="plan" >
+                 Yearly
+           </div>
+                <div id ="space">
+                <button onclick="window.location.href='index.html'" >Go Back</button>
+            
+                <button onclick="window.location.href='index3.html'">Next Step </button></div>
+</div>
+<div></div>
+</body>
+</html>
+<!--Step 2 end -->

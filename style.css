@@ -1,0 +1,54 @@
+Body{
+    background-color: white;  
+    text-align: center;
+}
+h6{ margin: 0;
+    padding: 0;
+    color: rgb(177, 174, 174);}
+#head{ 
+    color: rgb(177, 174, 174);
+    margin-bottom: 0;
+    padding-bottom: 0;
+        }
+#head2{
+    margin-top: 0;
+  
+}     
+
+
+.b1{
+    border-top : 5px solid red;
+    box-shadow: 3px 4px 5px orange;
+    
+}
+.b2{
+    border-top : 5px solid red;
+    box-shadow: 3px 4px 5px orange;
+
+}
+.b3{
+    border-top : 5px solid red;
+    box-shadow: 3px 4px 5px orange;
+
+}
+.b4{
+    border-top : 5px solid red;
+    box-shadow: 3px 4px 5px orange;
+    
+}
+.head1{
+    padding: 20px;
+    color: rgb(177, 174, 174);
+    font-size: 75%;
+
+}
+.box :nth-child(odd){
+    transform: translateY(50%);
+}
+@media(max-width: 775px) {
+    .box:nth-child(odd) {
+        transform: translateY(0);
+
+    }
+}
+

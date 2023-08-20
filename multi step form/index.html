@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+ 
+  <link rel="stylesheet" href="indexstyle.css">
+  <title>Frontend Mentor | Multi-step form</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style type="text/css">
+    /*.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }*/
+  
+</style>
+</head>
+<body>
+ <!-- Sidebar start -->
+ 
+  <div id="box">
+
+      <div class="balign" >
+        <button style="background-color: blue;" class="circle">1</button></div>
+      <div class="balign">Step 1
+      <br>Your info</div>
+  
+      <div class=" balign">
+      <button class="circle">2</button>  
+      </div>
+    
+      <div class="balign">Step 2 <br>
+      Select plan</div>
+ 
+      <div class="balign">
+      <button class="circle">3</button>
+      </div>
+
+      <div class = "balign">Step 3 <br>
+      Add-ons</div>
+   
+      <div class="balign"> 
+      <button class="circle">4</button>
+      </div>
+      <div class="balign">Step 4 <br>
+      Summary</div> 
+  </div>
+  <!-- Sidebar end -->
+
+  <!-- Step 1 start -->
+
+
+
+<form id = "fbox" action="index2.html">
+  <div id="pi">Personal info</div>
+  <div id="secline">Please provide your name, email address, and phone number.</div>
+   <div><label class= "nam" >Name</label>
+  <input class="in1" type="text" onfocus="this.value=''" value="e.g. Stephen King">
+</div>
+  <div><label class="nam">Email Address</label>  
+  <input class="in1" type="email" onfocus="this.value=''"value="e.g. stephenking@lorem.com"></div>
+  <div><label class="nam">Phone Number</label>  
+  <input class="in1" type=" text" onfocus="this.value=''"value="e.g. +1 234 567 890"></div>
+  <button id="next">Next Step</button>
+</form>  
+
+
+  <!--Total (per month/year)
+
+  Go Back
+  Confirm
+  Finishing up
+  Double-check everything looks OK before confirming.
+
+   Dynamically add subscription and add-on selections here -->
+
+
+
+  <!-- Step 5 start 
+
+  Thank you!
+
+  Thanks for confirming your subscription! We hope you have fun 
+  using our platform. If you ever need support, please feel free 
+  to email us at support@loremgaming.com.
+
+  Step 5 end -->
+
+  
+<!--  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+</body>
+</html>

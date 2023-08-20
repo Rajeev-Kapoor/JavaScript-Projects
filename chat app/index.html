@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Simple booking</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style type="text/css"> 
+   @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+   /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  */
+  body{
+    font-family:'Rubik', sans-serif;
+    background-color: white ;
+  padding: 0;
+  margin: 0;
+  }
+  #column{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: repeat(2  1fr);
+    grid-area: 1/2/2/2;
+  }
+  #box{
+    height: 500px;
+    width: 100%;
+    border-bottom-left-radius: 125px;
+    border-bottom-right-radius: 125px;
+    background:linear-gradient(hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+  }
+  img{
+  border-radius:50%;
+  border: 1px solid white;
+}
+  .panel{
+    position: absolute;
+    left: 230px;
+    top: 50px;
+    height: 400px;
+    width: 200px;
+    border: 5px solid white;
+    box-shadow: 5px 5px 5px 5px whitesmoke;
+    border-radius: 16px;
+    background-color:hsl(270, 36%, 95%);
+    display: grid;
+    grid-template-rows: repeat(11, 1fr);  }
+ 
+  #h1{height:35px;
+    width:200px;
+    background: linear-gradient(hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align:center;
+  }
+  .h1box{ 
+        border: 1px solid white;
+        background-color:white;
+        border-radius: 4px;
+    
+    }
+  .box3{
+    height: 20px;
+    width: 90px;
+    background-color: hsl(276, 63%, 86%);
+    border-radius: 5px;
+    font-size: 30%;
+    color:hsl(276, 89%, 52%);
+    padding: 3px;
+    margin: 5px;
+    text-align: left;
+  }
+   
+.box2{
+ position: relative;
+    left: 80px;
+    height: 20px;
+    width: 80px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    font-size: 30%;
+    color:hsl(276, 89%, 52%);
+    padding: 3px;
+    margin: 5px;
+    text-align: left;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+.last1{
+  height: 30px;
+  width: 170px;
+  border: 2px solid white;
+  background:linear-gradient(hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+  border-radius: 10px;
+  color: white;
+  
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  ;
+}
+input{
+  border-color: blueviolet;
+  border-radius: 10px;
+  height: 20px;
+  width: 170px;
+  margin:10px;
+  font-size: 50%;
+  }
+
+#strt{
+display: flex;
+justify-content: end;}
+
+#loc{
+  display: flex;
+justify-content:start;
+align-items:center;
+font-weight: bold;
+font-size: 120%;
+}
+  button{
+    background-color: black;
+    color: aliceblue;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: translate( 160px ,-33px);
+  }
+</style>
+</head>
+<body>
+<div id = "column">
+  <div id="box"></div>
+  
+  <div class="panel">
+    <div id ="h1" >
+      <div>   </div>
+    <div class="h1box" ></div>
+    <div></div>
+    <div >
+      <img src="images/avatar.jpg " alt="avtar" height="20px"  ></div>
+      <div style="color: rgb(249, 248, 248);text-align: center;font-size: 70%;">Samuel Green
+      <p style="color: white; font-size: 50%;text-align: center;">Available to Walk </p></div>  
+    </div>  
+    
+    <div class="box3">
+      That sounds great. I’d be happy with that.
+    </div>
+
+    <div class="box3">  
+      Could you send over some pictures of your dog, please?
+    </div>
+    <div id="strt">
+      <img src="images/dog-image-1.jpg " alt="" width="30px">
+      <img src="images/dog-image-2.jpg" alt="" width="30px">
+      <img src="images/dog-image-3.jpg" alt="" width="30px">
+    </div>
+      <div class="box2">
+      Here are a few pictures. She’s a happy girl!
+    </div>
+    <div class="box2">
+        Can you make it?
+    </div>
+    <div class ="box3">
+        She looks so happy! The time we discussed works. How long shall I take her out for?
+    </div>
+    
+    <div class="last1">
+        <div style="font-size: 50%;">30 minute walk </div>$29
+        
+    </div>
+    <div class=" last1">  
+        <div  class = "circle" style="font-size: 50%;">1 hour walk</div>
+         $49
+    
+  </div>
+        <input type="text" value =  "Type a message… ">
+        <button>&#62 </button>
+</div>
+<div> </div>
+
+<div id = "loc">
+<p>Simple booking
+<b style="display:block; font-size: 40%; padding-top: 20px;">
+  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+  discuss arrangements and make bookings. Once the walk has been completed you can rate 
+  your walker and book again all through the chat.
+</b></p>
+</div></div></div>
+
+  <div></div>
+  <div></div>
+</div>
+    </div>
+</body>
+</html>
